@@ -1,82 +1,79 @@
-line=str(input("введите строчку "))
-l=list()
-for element in line:
-	if "а" in element:
-
-		 l.append(".-")
-	if "б" in element:
-		 l.append("-...")
-	if "в" in element:
-		 l.append(".--")
-	if  "г" in element:
-		 l.append("--.")
-	if  "д" in element:
-		 l.append("-..")
-	if  "е"in element:
-		 l.append(".")
-	if "й" in element:
-		l.append(".---")
-	if  "ж" in element:
-		 l.append("...-")
-	if  "з" in element:
-		 l.append("--..")
-	if  "и" in element:
-		 l.append("..")
-	if  "к" in element:
-		 l.append("-.-")
-	if  "л" in element:
-		 l.append(".-..")
-	if  "м" in element:
-		 l.append("--")
-	if  "н" in element:
-		 l.append("-.")
-	if  "о" in element:
-		 l.append("---")
-	if  "п" in element:
-		 l.append(".--.")
-	if  "р" in element:
-		 l.append(".-.")
-	if  "с" in element:
-		 l.append("...")
-	if  "т" in element:
-		 l.append("-")
-	if  "у" in element:
-		 l.append("..-")
-	if "ф" in element:
-		 l.append("..-.")
-	if " " in element:
-		l.append(" ")
-	if "х" in element:
-		l.append("....")
-	if "ц" in element:
-		l.append("-.-.")
-	if "ч" in element:
-		l.append("---.")
-	if "ш" in element :
-		l.append("----")
-	if "щ" in element:
-		l.append("--.-")
-	if "ъ" in element:
-		l.append(".--.-.")
-	if "ы" in element:
-		l.append("-.--")
-	if "ь" in element:
-		l.append("-..-")
-	if "э" in element:
-		l.append("..-..")
-	if "ю" in element:
-		l.append("..--")
-	if "я" in element:
-		l.append(".-.-")
-	if line=="выход":
-		print("ЗАВЕРШЕНИЕ ПРОГРАММЫ")
-		exit()
-
+text = str(input("Enter text in Russian: ")).lower()
+result = []
+for element in text:
+    if "а" in element:
+        result.append(".-")
+    if "б" in element:
+        result.append("-...")
+    if "в" in element:
+        result.append(".--")
+    if "г" in element:
+        result.append("--.")
+    if "д" in element:
+        result.append("-..")
+    if "е" in element:
+        result.append(".")
+    if "й" in element:
+        result.append(".---")
+    if "ж" in element:
+        result.append("...-")
+    if "з" in element:
+        result.append("--..")
+    if "и" in element:
+        result.append("..")
+    if "к" in element:
+        result.append("-.-")
+    if "л" in element:
+        result.append(".-..")
+    if "м" in element:
+        result.append("--")
+    if "н" in element:
+        result.append("-.")
+    if "о" in element:
+        result.append("---")
+    if "п" in element:
+        result.append(".--.")
+    if "р" in element:
+        result.append(".-.")
+    if "с" in element:
+        result.append("...")
+    if "т" in element:
+        result.append("-")
+    if "у" in element:
+        result.append("..-")
+    if "ф" in element:
+        result.append("..-.")
+    if " " in element:
+        result.append(" ")
+    if "х" in element:
+        result.append("....")
+    if "ц" in element:
+        result.append("-.-.")
+    if "ч" in element:
+        result.append("---.")
+    if "ш" in element:
+        result.append("----")
+    if "щ" in element:
+        result.append("--.-")
+    if "ъ" in element:
+        result.append(".--.-.")
+    if "ы" in element:
+        result.append("-.--")
+    if "ь" in element:
+        result.append("-..-")
+    if "э" in element:
+        result.append("..-..")
+    if "ю" in element:
+        result.append("..--")
+    if "я" in element:
+        result.append(".-.-")
+    if text == "выход":
+        print("ЗАВЕРШЕНИЕ ПРОГРАММЫ")
+        exit()
 
 
-print("на азбуке Морзе: ")
+print("In Morse code")
 
 
-for i in l:
-	print(i)
-print("ALL DONE")
+print(*result,sep=' ')
+for_exit = input("Press to exit...")
